@@ -1,0 +1,13 @@
+[project]
+name = "sign-speech-bridge-agent"
+version = "0.1.0"
+description = "Vision Agents backend for Sign-Speech Bridge (pose, LLM, TTS, STT)"
+readme = "README.md"
+# PyAV (av) has no wheel for Python 3.14; use 3.10–3.13 to get a pre-built wheel and avoid building from source.
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "python-dotenv>=1.0",
+    "vision-agents[getstream,gemini,deepgram,elevenlabs,ultralytics]",
+]
+
+

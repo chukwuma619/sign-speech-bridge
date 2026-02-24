@@ -1,0 +1,2 @@
+python-dotenv>=1.0
+vision-agents[getstream,gemini,deepgram,elevenlabs,ultralytics]

@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sign–Speech Bridge",
-  description: "Real-time sign language ↔ speech bridge",
+  title: "Sispe",
+  description: "Sign language and speech in one call",
 };
 
 export default function RootLayout({

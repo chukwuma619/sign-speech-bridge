@@ -9,7 +9,6 @@ import {
   StreamVideo,
   VideoPreview,
 } from "@stream-io/video-react-sdk";
-import "@stream-io/video-react-sdk/dist/css/styles.css";
 import { createAgentSession } from "@/lib/stream";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -19,21 +18,15 @@ type JoinCallProps = {
   userId: string;
   onReady: (call: Call) => void;
   onError: (message: string) => void;
-  /** When provided (e.g. from /[callId] page), use this call ID instead of generating one. */
   callId?: string;
-  /** When true (creator of the call), start the agent session. When false (invitee), only join. */
   isCreator?: boolean;
-  /** Called after agent session is successfully created (so creator flag can be cleared). */
   onCreatorSessionStarted?: () => void;
-  /** Called when user cancels from the pre-join screen (go back to lobby). */
   onCancel?: () => void;
 };
 
 const callType = "default";
 
-/**
- * Google Meet–like pre-join: preview camera/mic and device selection before joining.
- */
+
 function PrejoinView({
   call,
   onJoin,
@@ -175,7 +168,7 @@ function JoinCallInner({
     <div className="flex min-h-screen flex-col items-center justify-center gap-6 bg-background p-6">
       <Card className="w-full max-w-sm">
         <CardHeader>
-          <CardTitle>Sign–Speech Bridge</CardTitle>
+          <CardTitle>Sispe</CardTitle>
         </CardHeader>
         <CardContent>
           <p className="text-sm text-muted-foreground">{status}</p>

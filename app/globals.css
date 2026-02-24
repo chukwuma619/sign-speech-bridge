@@ -2,6 +2,10 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
+/* Stream Video SDK: base styles first, then our shadcn-themed overrides */
+@import "@stream-io/video-react-sdk/dist/css/styles.css" layer(video-default);
+@import "./stream-theme.css";
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {

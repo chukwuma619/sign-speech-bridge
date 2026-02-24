@@ -21,10 +21,7 @@ type LiveCaptionsProps = {
   userName: string;
 };
 
-/**
- * Subscribes to the call's Stream Chat channel (messaging:{callId}) and displays
- * agent transcript messages as live captions (Speech → Sign for the signer).
- */
+
 export function LiveCaptions({
   callId,
   apiKey,
@@ -62,7 +59,7 @@ export function LiveCaptions({
         if (cancelled) return;
         setConnected(true);
 
-        const channel = client.channel("messaging", callId);
+        const channel = client.channel("livestream", callId);
         channelRef.current = channel;
 
         await channel.watch();

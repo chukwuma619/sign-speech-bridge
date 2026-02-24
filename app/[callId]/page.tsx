@@ -106,7 +106,6 @@ export default function CallIdPage() {
     <Lobby
       onJoined={setJoinState}
       callId={callId}
-      inviteLink={typeof window !== "undefined" ? `${window.location.origin}/${callId}` : undefined}
     />
   );
 }

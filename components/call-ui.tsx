@@ -10,7 +10,6 @@ import {
   StreamVideo,
   useCallStateHooks,
 } from "@stream-io/video-react-sdk";
-import "@stream-io/video-react-sdk/dist/css/styles.css";
 import type { Call, StreamVideoClient } from "@stream-io/video-react-sdk";
 import { Button } from "@/components/ui/button";
 import {
@@ -133,30 +132,7 @@ function CallContent({
           <StreamTheme>
             <SpeakerLayout participantsBarPosition="bottom" />
           </StreamTheme>
-          <div className="mt-2 flex flex-wrap items-center gap-2">
-            <span className="inline-flex items-center gap-1.5 rounded-md border border-border bg-muted/50 px-2 py-0.5 text-xs font-medium text-muted-foreground">
-              <span aria-hidden>👋</span> Sign: use camera
-            </span>
-            <span className="inline-flex items-center gap-1.5 rounded-md border border-border bg-muted/50 px-2 py-0.5 text-xs font-medium text-muted-foreground">
-              <span aria-hidden>🎤</span> Speak: use mic → see captions
-            </span>
-            <Button
-              type="button"
-              variant="outline"
-              size="sm"
-              onClick={() => camera.toggle()}
-            >
-              {camMute ? "Turn on camera" : "Turn off camera"}
-            </Button>
-            <Button
-              type="button"
-              variant="outline"
-              size="sm"
-              onClick={() => microphone.toggle()}
-            >
-              {micMute ? "Turn on microphone" : "Turn off microphone"}
-            </Button>
-          </div>
+
         </div>
         <aside className="w-full shrink-0 space-y-2 md:w-72">
           {hasChat ? (

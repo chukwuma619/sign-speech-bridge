@@ -1,0 +1,246 @@
+/**
+ * Stream Video SDK — full shadcn color theme.
+ * Every Stream CSS variable that affects color is mapped to shadcn design
+ * tokens (--primary, --foreground, --muted, --card, etc.) so the video UI
+ * matches the rest of the app and respects light/dark mode.
+ */
+
+.str-video {
+  /* ─── Brand colors (used in highlights, selected states, links) ─── */
+  --str-video__brand-color1: var(--primary);
+  --str-video__brand-color2: var(--chart-2);
+  --str-video__brand-color3: var(--chart-1);
+  --str-video__brand-color4: var(--chart-4);
+  --str-video__brand-color5: var(--destructive);
+  --str_video__brand-color6: var(--chart-3);
+
+  /* ─── Primary & secondary (buttons, active states) ─── */
+  --str-video__primary-color: var(--primary);
+  --str-video__secondary-color: var(--secondary-foreground);
+
+  /* ─── Text ─── */
+  --str-video__text-color1: var(--foreground);
+  --str-video__text-color2: var(--muted-foreground);
+  --str-video__text-color3: var(--muted-foreground);
+  --str-video__text-color4: var(--foreground);
+
+  /* ─── Backgrounds ─── */
+  --str-video__background-color0: var(--background);
+  --str-video__background-color1: var(--card);
+  --str-video__background-color2: var(--muted);
+  --str-video__background-color3: var(--muted);
+  --str-video__background-color4: var(--card);
+  --str-video__background-color5: var(--muted);
+  --str-video__background-color6: var(--muted-foreground);
+  --str-video__background-color7: var(--muted-foreground);
+
+  /* ─── Base colors (used across components) ─── */
+  --str-video__base-color1: var(--muted);
+  --str-video__base-color2: var(--muted-foreground);
+  --str-video__base-color3: var(--muted-foreground);
+  --str-video__base-color4: var(--foreground);
+  --str-video__base-color5: var(--background);
+  --str-video__base-color6: var(--card);
+  --str-video__base-color7: var(--background);
+
+  /* ─── Buttons - default (secondary style) ─── */
+  --str-video__button-default-base: var(--secondary);
+  --str-video__button-default-hover: var(--accent);
+  --str-video__button-default-pressed: var(--muted);
+  --str-video__button-default-active: var(--secondary);
+  --str-video__button-default-disabled: var(--muted);
+
+  /* ─── Buttons - primary ─── */
+  --str-video__button-primary-base: var(--primary);
+  --str-video__button-primary-hover: var(--primary);
+  --str-video__button-primary-pressed: var(--primary);
+  --str-video__button-primary-active: var(--primary);
+
+  /* ─── Buttons - secondary (e.g. leave/end call) ─── */
+  --str-video__button-secondary-base: var(--secondary);
+  --str-video__button-secondary-hover: var(--destructive);
+  --str-video__button-secondary-pressed: var(--destructive);
+  --str-video__button-secondary-active: var(--destructive);
+
+  /* ─── Buttons - tertiary ─── */
+  --str-video__button-tertiary-base: var(--destructive);
+  --str-video__button-tertiary-hover: var(--destructive);
+  --str-video__button-tertiary-pressed: var(--destructive);
+  --str-video__button-tertiary-active: var(--muted);
+
+  /* ─── Icons ─── */
+  --str-video__icon-default: var(--foreground);
+  --str-video__icon-hover: var(--foreground);
+  --str-video__icon-pressed: var(--muted-foreground);
+  --str-video__icon-active: var(--primary-foreground);
+  --str-video__icon-alert: var(--foreground);
+  --str-video__icon-disabled: var(--muted-foreground);
+
+  /* ─── Alerts & status ─── */
+  --str-video__alert-success: var(--chart-1);
+  --str-video__alert-caution: var(--chart-4);
+  --str-video__alert-warning: var(--destructive);
+  --str-video__alert-success-background: var(--muted);
+  --str-video__alert-caution-background: var(--muted);
+  --str-video__alert-warning-background: var(--muted);
+  --str-video__info-color: var(--chart-1);
+  --str-video__info-color--accent: var(--chart-2);
+  --str-video__danger-color: var(--destructive);
+  --str-video__danger-color--accent: var(--destructive);
+
+  /* ─── Overlays & backdrop ─── */
+  --str-video__backdrop1: rgba(0, 0, 0, 0.5);
+  --str-video__overlay-color: rgba(0, 0, 0, 0.5);
+  --str-video__livestream-overlay-color: rgba(0, 0, 0, 0.25);
+  --str-video__livestream-overlay-color-hovered: rgba(0, 0, 0, 0.5);
+
+  /* ─── Composite button group (default; overridden per-context below) ─── */
+  --str-video__composite-button__button-group--color: var(--foreground);
+  --str-video__composite-button__button-group--background-color: var(--primary);
+  --str-video__composite-button__button-group-active--background-color: var(--primary);
+  --str-video__composite-button__button-group-active-primary--background-color: var(--primary);
+  --str-video__composite-button__button-group-active-secondary--background-color: var(--destructive);
+  --str-video__composite-button__button-group-active-secondary-hover--background-color: var(--destructive);
+  --str-video__composite-button__button-group-hover--background-color: var(--accent);
+
+  /* ─── Border radius (shadcn --radius) ─── */
+  --str-video__border-radius-xxs: 2px;
+  --str-video__border-radius-xs: var(--radius-sm);
+  --str-video__border-radius-sm: var(--radius-sm);
+  --str-video__border-radius-md: var(--radius-md);
+  --str-video__border-radius-lg: var(--radius-lg);
+  --str-video__border-radius-xl: var(--radius-xl);
+  --str-video__border-radius-xxl: var(--radius-2xl);
+  --str-video__border-radius-circle: 9999px;
+
+  /* ─── Typography ─── */
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+
+.str-video .str-video__call-controls .str-video__composite-button__button-group {
+  color: var(--primary-foreground);
+}
+.str-video .str-video__call-controls .str-video__composite-button__button-group .str-video__icon {
+  background-color: var(--primary-foreground);
+}
+.str-video .str-video__call-controls .str-video__composite-button__caption {
+  color: var(--primary-foreground);
+}
+/* Hover: background becomes light (accent), so use foreground so icon/caption stay visible */
+.str-video .str-video__call-controls .str-video__composite-button__button-group:not(.str-video__composite-button__button-group--disabled):hover {
+  color: var(--foreground);
+}
+.str-video .str-video__call-controls .str-video__composite-button__button-group:not(.str-video__composite-button__button-group--disabled):hover .str-video__icon {
+  background-color: var(--foreground);
+}
+.str-video .str-video__call-controls .str-video__composite-button__button-group:not(.str-video__composite-button__button-group--disabled):hover .str-video__composite-button__caption {
+  color: var(--foreground);
+}
+.str-video .str-video__call-controls .str-video__call-controls__button--variant-danger .str-video__icon {
+  background-color: white;
+}
+.str-video .str-video__call-controls .str-video__call-controls__button--variant-danger:hover .str-video__icon {
+  background-color: white;
+}
+.str-video .str-video__call-controls .str-video__call-controls__button--variant-success .str-video__icon {
+  background-color: var(--primary-foreground);
+}
+.str-video .str-video__call-controls .str-video__call-controls__button--variant-active .str-video__icon {
+  background-color: var(--primary-foreground);
+}
+.str-video .str-video__call-controls .str-video__composite-button__button-group.str-video__composite-button__button-group--active:hover .str-video__icon,
+.str-video .str-video__call-controls .str-video__composite-button__button-group.str-video__composite-button__button-group--active-primary:hover .str-video__icon {
+  background-color: var(--foreground);
+}
+.str-video .str-video__call-controls .str-video__composite-button__button-group.str-video__composite-button__button-group--active:hover .str-video__composite-button__caption,
+.str-video .str-video__call-controls .str-video__composite-button__button-group.str-video__composite-button__button-group--active-primary:hover .str-video__composite-button__caption {
+  color: var(--foreground);
+}
+
+/*
+ * Device settings button (pre-join / in-call): same as call controls — dark button
+ * needs light icon so the gear is visible; hover uses light background so dark icon.
+ */
+.str-video .str-video__device-settings__button .str-video__icon {
+  background-color: var(--primary-foreground);
+}
+.str-video .str-video__device-settings__button:hover .str-video__icon {
+  background-color: var(--foreground);
+}
+.str-video .str-video__device-settings__settings-icon {
+  color: var(--primary-foreground);
+}
+.str-video .str-video__device-settings__header .str-video__icon.str-video__device-settings__settings-icon {
+  color: var(--primary-foreground);
+}
+.str-video .str-video__device-settings__close-button {
+  color: var(--foreground);
+}
+.str-video .str-video__device-settings__close-button:hover {
+  color: var(--foreground);
+}
+.str-video .str-video__device-settings__close-button .str-video__icon {
+  background-color: var(--foreground);
+}
+.str-video .str-video__device-settings__close-button:hover .str-video__icon {
+  background-color: var(--foreground);
+}
+
+/*
+ * Device settings modal content: option rows and Test speaker button use
+ * button-primary-base (dark) in SDK, so text was invisible. Use light
+ * backgrounds and dark text for readability.
+ */
+.str-video .str-video__device-settings__device-kind .str-video__option,
+.str-video .str-video__device-settings__device-kind .str-video__device-settings__option {
+  background-color: var(--muted);
+  color: var(--foreground);
+}
+.str-video .str-video__device-settings__device-kind .str-video__option:hover,
+.str-video .str-video__device-settings__device-kind .str-video__device-settings__option:hover {
+  background-color: var(--accent);
+  color: var(--foreground);
+}
+.str-video .str-video__device-settings__device-kind .str-video__option--selected,
+.str-video .str-video__device-settings__device-kind .str-video__device-settings__option--selected,
+.str-video .str-video__device-settings__device-kind .str-video__option--active,
+.str-video .str-video__device-settings__device-kind .str-video__device-settings__option--active {
+  background-color: var(--accent);
+  color: var(--foreground);
+}
+.str-video .str-video__device-settings__device-kind .str-video__option .str-video__icon,
+.str-video .str-video__device-settings__device-kind .str-video__device-settings__option .str-video__icon {
+  background-color: var(--foreground);
+}
+/* Test speaker button: light background, dark text and icon */
+.str-video .str-video__speaker-test .str-video__composite-button__button-group {
+  background-color: var(--muted);
+  color: var(--foreground);
+}
+.str-video .str-video__speaker-test .str-video__composite-button__button-group .str-video__icon {
+  background-color: var(--foreground);
+}
+.str-video .str-video__speaker-test .str-video__composite-button__button-group:hover {
+  background-color: var(--accent);
+  color: var(--foreground);
+}
+.str-video .str-video__speaker-test .str-video__composite-button__button-group:hover .str-video__icon {
+  background-color: var(--foreground);
+}
+.str-video .str-video__device-settings__device-selector-title {
+  color: var(--foreground);
+}
+.str-video .str-video__device-settings {
+  background-color: var(--card);
+  color: var(--foreground);
+}
+.str-video .str-video__audio-volume-indicator .str-video__icon {
+  background-color: var(--foreground);
+}
+.str-video .str-video__audio-volume-indicator .str-video__audio-volume-indicator__bar {
+  background-color: var(--border);
+}
+.str-video .str-video__audio-volume-indicator .str-video__audio-volume-indicator__bar-value {
+  background: var(--primary);
+}

@@ -30,6 +30,7 @@ export async function GET(request: NextRequest) {
   const now = Math.floor(Date.now() / 1000);
   const payload = {
     user_id: userId,
+    userID: userId, // Stream Chat expects userID claim
     iat: now,
     exp: now + VALIDITY_SECONDS,
   };

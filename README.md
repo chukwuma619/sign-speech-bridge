@@ -51,7 +51,13 @@ The Next.js app uses the [Stream Video React SDK](https://getstream.io/video/doc
    ```bash
    pnpm dev
    ```
-   Open [http://localhost:3000](http://localhost:3000), enter a name (optional), and click **Join call**. The app will create a Stream call, spawn the agent into that call, and show the call UI with local video (for signing), participants (you + agent), a captions panel, and camera/mic controls.
+   Open [http://localhost:3000](http://localhost:3000), enter a name (optional), and click **Join call**. The app will create a Stream call, spawn the agent into that call, and show the call UI with local video (for signing), participants (you + agent), **live captions** (Speech → Sign: agent and participant speech shown in the sidebar), and camera/mic controls.
+
+## Phase 3 / Polish (optional)
+
+- **HeyGen (signed avatar):** Optional [HeyGen](https://www.heygen.com/) (or similar) plugin can be added to Vision Agents for signed output so signers “see” spoken replies in sign. See [Vision Agents integrations](https://visionagents.ai/integrations/introduction-to-integrations).
+- **RAG (sign vocabulary):** Optional RAG (e.g. [TurboPuffer](https://turbopuffer.com/)) over sign vocabulary or FAQ can improve interpretation; plug into the agent’s context or tools.
+- **Low-latency tuning:** Adjust agent `fps` (e.g. in `agent/main.py`, Gemini Realtime `fps=3`), turn-detection settings, and Stream call settings so the bridge feels real-time. See Stream’s [transcription and captions](https://getstream.io/video/docs/react/transcribing/calls/) and your agent’s STT/TTS configuration.
 
 ## Getting Started (Next.js)
 
